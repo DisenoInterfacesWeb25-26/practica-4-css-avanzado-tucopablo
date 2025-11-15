@@ -1,0 +1,245 @@
+* {
+  margin: 0;/*selector universal*/
+  padding: 0;
+  
+}
+body
+{
+    font-family: Montserrat;
+
+}
+header
+{
+    /*con la poscicion fixed del punto 12.1 tengo que añadir un margin-top para pasr el head por abajo*/
+    margin-top: 60px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    height: auto;
+    border: 1px green solid;
+    background-color: #f2bd0e1c;
+}
+header h1
+{
+    /*flex: 1; Y text-align: center;  les quito porque me gusta mas el nombre de la marca pegado al logo*/
+    display: inline-block;
+    font-size: 3em;
+    color: green;
+}
+header h2
+{
+    display: inline-block;
+    font-size: 2em;
+    color: green;
+}
+header a {
+  display: inline-block;
+}
+.logo {
+  max-height: 200px;
+  height: auto;
+  width: auto;           
+  border-radius: 50%;
+  margin-right: 20px;
+  
+}
+.logo:hover{transform:scale(1.1);}
+
+nav
+{
+    position: fixed;/*punto 12-1*/
+    top:0;
+    right:0;
+    width: 100%;
+
+ margin-bottom: 20px;
+    border: 1px green solid;
+    padding-top:15px;
+    text-align: center;
+    background-color: #f2bd0e42;
+    
+}
+nav a
+{
+    display:inline-block;
+    border:green solid 1.5px;
+    border-top-left-radius: 10%;
+    border-top-right-radius:10% ;
+    padding: 10px;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 1.1em;
+    background-color:green;
+    color: white;
+}
+nav a:hover {
+  background-color: rgb(82, 184, 82);
+  font-weight:bold;
+  color: white;
+}
+
+main
+{
+    overflow:hidden;
+    background-color: #f2bd0e11;
+    padding: 40px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    border: 1px green solid;
+}
+    
+section
+{
+    float:left;
+    width:60%;
+    height: auto;
+    
+    margin: 0 0 30px 30px;
+    padding:0;
+} 
+
+article
+{
+    background-color: #f2bd0e42;
+    border: 1px green solid;
+    margin: 30px;
+    padding:40px;
+
+}
+article h2
+{
+font-size:2em;
+color: green;
+padding-bottom: 20px;
+}
+article p
+{
+    text-align: justify;
+    font-size: 1.2em;
+}
+aside
+{
+    
+    float:right;
+    width:25%;
+    margin:30px 30px 30px 30px;
+    padding: 0px;
+    background-color: rgb(101, 181, 101);
+    border: 1px green solid;
+    box-sizing: border-box;
+}
+
+aside li
+{
+    padding-bottom: 30px;
+    padding-left:30px;
+    padding-right: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:White;
+    font-size: 1.3em;
+    width: 100%;
+}
+aside a
+{
+    float:right;
+    margin-bottom: 10px;
+    color:white;
+
+}
+aside img
+{
+    width: 65px;
+    min-height: 65px;
+    border-radius:20%;
+    vertical-align: right;
+    
+}
+aside a:hover
+{
+transform:scale(1.1) rotate(5deg) ;
+}
+aside h2
+{
+    display:block;
+    width: 100%;
+    font-size: 2em;
+    color: white;
+    margin-bottom:30px;
+    text-decoration: underline;
+    text-align: center;
+    height: 60px;
+    box-sizing: border-box;
+    padding-bottom:20px;
+    padding-top:20px ;
+    background-color:rgb(76, 135, 76);
+}
+footer
+{
+    clear:both;
+    background-color: #f2bd0e42;
+    border: 1px green solid;
+    text-align: center;
+    padding: 10px;
+}
+footer a
+{
+    color: green;
+    font-weight: bold;
+}
+footer a:hover
+{
+    color:  rgb(82, 184, 82);
+    font-weight: bold;  
+}
+.mapa
+{
+     display: inline-block;
+     vertical-align: middle;
+}
+.redes, .redes2
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0;
+}
+
+.redes a
+{
+    display:inline-block;
+    font-size: 0;   
+}
+
+footer img
+{
+    width:50px;
+    height: 50px;
+    border-radius: 20%;
+    margin: 5px;
+}
+footer img:hover
+{
+    transform:scale(1.15);
+}
+.icono-fijo/*punto 12.1*/
+{
+    position:fixed;
+    bottom: 10px;
+    right: 10px;/*probar a mano el posicionamento*/
+    border-radius: 30%;
+}
+.icono-fijo img/* para mi no olvidar de no poner.img !!img es una etiqueta no es una clase!!*/
+{
+    border-radius: 20%;
+    width:50px;
+    height: 50px;
+    
+}
+.icono-fijo img:hover
+{
+    transform:scale(1.3);   
+}
