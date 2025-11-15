@@ -1,0 +1,198 @@
+/*@media (min-width: 1200px)  creo que no hace falta si uso popr defecto y cambio solo si cambia de pantalla*/
+* {
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    min-height: 100vh;
+}
+header
+{
+    width: 99%;
+    /*height: 45%; como es una maqueta vacia no puedo poner auto ni%*/
+     min-height: 12vh;/*alternativa a poner algo fijo en px que me dara problema a baja de tamnaño*/
+    background-color: rgb(196, 230, 252);
+    border: solid 1px rgb(50, 99, 235);
+    margin-bottom: 3vh;
+    line-height: 12vh;/*parta centrar funciona para la maqueta porque solo una linea*/
+    
+}
+
+#menu
+{
+    width: 99%;
+    min-height: 8vh;
+    background-color: rgb(196, 230, 252);
+    border: solid 1px rgb(50, 99, 235);
+    margin-bottom: 3vh;
+    line-height: 8vh;
+}
+
+main
+{
+    width: 99%;    
+     min-height: 60vh;/*alternativa a poner algo fijo en px que me dara problema a baja de tamnaño*/
+    
+    /*border: solid 1px rgb(50, 99, 235);*/
+    margin-bottom: 3vh;
+
+    overflow: auto;
+}
+
+#nav1
+{
+    float:left;
+    min-height: 60vh;
+    width: 20%;
+    line-height: 49vh;
+    background-color: rgb(196, 230, 252);
+    border: solid 1px rgb(50, 99, 235);
+    display: table-cell;
+    vertical-align: middle;
+    margin-right:2%;/*asi arregla el problema para ajusta todo: si la pantalla hacia 1200 o 1500 por ejemploi no estaba alineado todo con px*/
+}
+
+#nav2
+    {
+    float:left;      
+    min-height: 8vh;
+    line-height: 8vh;
+    width: 78%;
+    background-color: rgb(196, 230, 252);
+    border: solid 1px rgb(50, 99, 235);
+    margin-bottom:3vh;
+    display: table-cell;
+    vertical-align: middle;
+    }
+
+#Banner
+{
+    float:left;
+    min-height: 49vh;
+    line-height: 49vh;
+    width: 21%;
+    background-color: rgb(196, 230, 252);
+    border: solid 1px rgb(50, 99, 235);
+    /*margin-right:20px;*/
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#cuerpo
+{
+    float:left;
+    min-height: 49vh;
+    line-height: 49vh;
+    width: 55%;
+    background-color: rgb(196, 230, 252);
+    border: solid 1px rgb(50, 99, 235);
+    margin-right:2%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+footer{
+    clear:both;
+    width: 99%;
+    min-height: 8vh;
+    background-color: rgb(196, 230, 252);
+    border: solid 1px rgb(50, 99, 235);
+    margin-bottom: 0px;
+    line-height: 8vh;
+}
+
+@media (min-width: 700px) and (max-width: 1199px)
+{
+    * {
+    box-sizing: border-box;
+        }
+    body
+    {
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;/*calibri no0 lo recononce*/
+        font-weight: bold;/*lo pongo para distinguir porque no coge el calibri*/
+    }
+    main
+{
+    width: 100%;    
+     min-height: 60vh;/*alternativa a poner algo fijo en px que me dara problema a baja de tamnaño*/
+    
+    /*border: solid 1px rgb(50, 99, 235);*/
+    margin-bottom: 3vh;
+
+    /*overflow: auto;*/
+}
+    #nav1
+    {
+    float:left;
+    min-height: 49vh;
+    width: 16%;
+    background-color: rgb(196, 230, 252);
+    border: solid 1px rgb(50, 99, 235);
+    
+    margin-right:2%;/*asi arregla el problema para ajusta todo: si la pantalla hacia 1200 o 1500 por ejemploi no estaba alineado todo con px*/
+    margin-bottom: 3vh;
+    }
+    #nav2
+    {   
+        display: none;
+        margin-bottom: 3vh;
+    }
+    #cuerpo
+    {
+    float:right;
+    margin-bottom: 3vh;
+    width: 80%;
+    }
+    #Banner
+    {
+    width: 99%;
+    float:left;
+     min-height: 8vh;
+     line-height: 8vh;
+    }
+}
+
+@media (max-width:699px)
+{
+   body{ font-family: 'Times New Roman', Times, serif;}
+   
+   #nav1
+   {
+    float:left;
+    min-height: 8vh;
+    line-height: 8vh;
+    width: 100%;
+    margin-bottom: 1vh;
+   }
+
+   #nav2{float:left;
+    min-height: 8vh;
+    line-height: 8vh;
+    width: 100%;
+    margin-bottom: 3vh;}
+
+   #cuerpo
+   {
+    float:left;
+    min-height: 29vh;
+    line-height: 29vh;
+    margin-bottom: 3vh;
+    width: 100%;
+   }
+
+    #Banner
+    {
+    width: 100%;
+    float:left;
+    min-height: 8vh;
+    line-height: 8vh;
+    }
+
+}
