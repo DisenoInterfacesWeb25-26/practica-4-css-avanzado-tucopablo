@@ -6,8 +6,9 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="keywords" content="supermecado, tienda cercana, alimentos, productos saludables, productos frescos">
      <meta name="author" content="Laurent">
-   <link rel="stylesheet" href="assets/css/Styleindex.css"><!--Error me habia equivocado con la barra href="assets\css\Styleindex.css"-->
-    <title>DIW-La Tienda Saludable</title>
+   <link rel="stylesheet" href="assets/css/Styleindex.css">
+    <link rel="stylesheet" href="assets/css/PrintDWI.css" media="print"><!-- Actividad 4.2.1 Impresión (1 punto)-->
+   <title>DIW-La Tienda Saludable</title>
     </head>
     <body>
         <header>
@@ -18,10 +19,11 @@
                 <h2>Tu Tienda de proximidad con productos saludables</h2>
         </header>
             <nav>
+                <img src="assets/images/logoDIW.png" alt="Logo Supermercado DIW" class="logo">
                 <a href="index.html">INICIO</a>
                 <a href="servicios.html">SERVICIOS</a>
                 <a href="contacto.html">CONTACTOS</a><!--Actividad 4.1 -->
-
+                 <a href="flex.html">Flex</a>
             </nav>
         <main>
                 <section>
@@ -33,8 +35,18 @@
                                 cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
                                 galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
                             </p>
+                            <div class="media700">
+                                <br>
+                            <h2>Nuestro Proyecto</h2>
+                            <p>
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
+                                cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
+                                galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </p>
+                            </div>
                         </article>
-                        <article>
+                        <article class="proyecto">
                             <h2>Nuestro Proyecto</h2>
                             <p>
                                 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
@@ -45,23 +57,24 @@
                         </article>
                 </section>  
                 <aside>
-                    <h2>Enlaces De Interès</h2><!--No consigo a poner las imagenes a la Derecha-->
+                    <h2>Enlaces De Interès</h2>
                     <ul>
-                        <li>Consultar el catalogo: <a href="#"><img src="assets/images/catalogo.png" alt="Catalogo.png"></a></li>
-                        <li>Lista de Productores: <a href="#"><img src="assets/images/Productores.png" alt="Productores.png"></a></li>
-                        <li>Busca tu Tienda: <a href="#"><img src="assets/images/Buscar.png" alt="Buscar.png"></a></li>
-                        <li>Haz Pedido online: <a href="servicios.html"><img src="assets/images/Pedido.png" alt="Online.png"></a></li>
-                        <li>Talleres: <a href="servicios.html"><img src="assets/images/Talleres.png" alt="Taller.png"></a></li>
-                        <li>Cesta Sorpresa: <a href="servicios.html"><img src="assets/images/CESTA.png" alt="Cesta.png"></a></li>
-                        <li>Hazte Miembro: </a><a href="servicios.html"><img src="assets/images/Miembro.png" alt="Miembros.png"></a></li>
-                        <li>Acceso cliente: <a href="#"><img src="assets/images/Acceso.png" alt="Acceder.png"></a></li>
+                        <li>Consultar el catalogo <a href="#"><img src="assets/images/catalogo.png" ></a></li><!--quito el alt para probar el ejercuicio4.7.1-->
+                        <li>Lista de Productores <a href="#"><img src="assets/images/Productores.png" alt="Productores.png"></a></li>
+                        <li>Busca tu Tienda <a href="#"><img src="assets/images/Buscar.png" alt="Buscar.png"></a></li>
+                        <li>Haz Pedido online <a href="servicios.html"><img src="assets/images/Pedido.png" alt="Online.png"></a></li>
+                        <li>Talleres <a href="servicios.html"><img src="assets/images/Talleres.png" alt="Taller.png"></a></li>
+                        <li>Cesta Sorpresa <a href="servicios.html"><img src="assets/images/CESTA.png" alt="Cesta.png"></a></li>
+                        <li>Hazte Miembro </a><a href="servicios.html"><img src="assets/images/Miembro.png" alt="Miembros.png"></a></li>
+                        <li>Acceso cliente <a href="#"><img src="assets/images/Acceso.png" alt="Acceder.png"></a></li>
                     </ul>
                 </aside>       
         </main>
         <footer>
             <div>
                 @2020 SUPERMERCADO DIW   
-                <a href="#">Politica de privacidad y cookies</a><!--punto 3-1-->
+                <a href="politica.pdf">Politica de privacidad y cookies</a><!--punto 4.7-->
+                
             </div>
         
             <div class="mapa">

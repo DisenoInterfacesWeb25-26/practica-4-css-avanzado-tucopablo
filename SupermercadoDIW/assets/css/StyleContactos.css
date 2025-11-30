@@ -7,9 +7,17 @@ body
 {
     font-family: Montserrat;
 }
+img:not([alt])
+{
+    border:3px solid red
+}
+a[href$=".pdf"]::after {
+    content: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png");
+    margin-left: 5px;
+}
 header
 {
-    /*con la poscicion fixed del punto 12.1 tengo que añadir un margin-top para pasr el head por abajo*/
+   
     margin-top: 60px;
     width: 100%;
     display:flex;
@@ -20,7 +28,7 @@ header
 }
 header h1
 {
-    /*flex: 1; Y text-align: center;  les quito porque me gusta mas el nombre de la marca pegado al logo*/
+    
     display: inline-block;
     font-size: 3em;
     color: green;
@@ -46,16 +54,17 @@ header a {
 
 nav
 {
-    position: fixed;/*punto 12-1*/
+    position: fixed;
     top:0;
     right:0;
     width: 100%;
-
- margin-bottom: 20px;
+    margin-bottom: 20px;
     border: 1px green solid;
     padding-top:15px;
     text-align: center;
     background-color: #f2bd0e42;
+    background-color: #f2bd0e42;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     
 }
 nav a
@@ -76,6 +85,9 @@ nav a:hover {
   font-weight:bold;
   color: white;
 }
+nav .logo
+{display:none}
+
 
 main
 {
@@ -167,7 +179,7 @@ font-weight: bold;
     color: green;
     margin-bottom:30px;
 }
-.Tablaservicios /* punto 13-1*/
+.Tablaservicios /* */
 {width: 100%;
   border-collapse: collapse;
   margin: 20px auto;
@@ -294,3 +306,9 @@ footer img:hover
     {
       transform: scale(1.3);
     }
+
+@media (min-width: 700px) and (max-width: 1199px)
+{}
+
+@media (max-width: 699px)
+{}

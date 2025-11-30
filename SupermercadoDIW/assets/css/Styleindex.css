@@ -8,9 +8,22 @@ body
     font-family: Montserrat;
 
 }
+img:not([alt])
+{
+    border:3px solid red
+}
+a[href$=".pdf"]::after {
+    content: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png");
+    margin-left: 5px;
+}
+
+ nav .logo 
+    {
+        display: none;
+    }
 header
 {
-    /*con la poscicion fixed del punto 12.1 tengo que añadir un margin-top para pasr el head por abajo*/
+  
     margin-top: 60px;
     width: 100%;
     display:flex;
@@ -21,10 +34,15 @@ header
 }
 header h1
 {
-    /*flex: 1; Y text-align: center;  les quito porque me gusta mas el nombre de la marca pegado al logo*/
+    
     display: inline-block;
     font-size: 3em;
     color: green;
+    transition: transform 0.5s ease;
+}
+header h1:hover
+{
+transform:translateY(20px);
 }
 header h2
 {
@@ -43,6 +61,9 @@ header a {
   margin-right: 20px;
   
 }
+/*nav .logo
+{display:none}*/
+
 .logo:hover{transform:scale(1.1);}
 
 nav
@@ -51,12 +72,14 @@ nav
     top:0;
     right:0;
     width: 100%;
-
- margin-bottom: 20px;
+    margin-bottom: 20px;
     border: 1px green solid;
     padding-top:15px;
     text-align: center;
     background-color: #f2bd0e42;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);/**/
+/*webkit-box-shadow: 1px 7px 5px 0px rgba(0,0,0,0.75);
+moz-box-shadow: 1px 7px 5px 0px rgba(0,0,0,0.75);*/
     
 }
 nav a
@@ -104,13 +127,30 @@ article
     border: 1px green solid;
     margin: 30px;
     padding:40px;
-
+     -webkit-transition: 2s linear;
+     transition: 2s linear;
 }
+
+article .media700
+{
+    display:none;
+}
+article:hover
+{background-color:  rgb(252, 152, 2);
+}
+
+/*Transicion*/
 article h2
 {
 font-size:2em;
 color: green;
 padding-bottom: 20px;
+transition: transform 1s;
+display: inline-block;
+}
+article:hover h2
+{color:white;
+transform: rotate(360deg);
 }
 article p
 {
@@ -141,6 +181,12 @@ aside li
     color:White;
     font-size: 1.3em;
     width: 100%;
+
+    background: rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px auto;
+    width: 90%;
 }
 aside a
 {
@@ -176,6 +222,146 @@ aside h2
     padding-top:20px ;
     background-color:rgb(76, 135, 76);
 }
+.formulario {
+    width: auto;
+    margin: 40px auto;
+    padding: 20px;
+    border:dotted 2px green;
+    background-color: #f2bd0e42;
+    
+}
+
+.label {
+    display: inline-block;
+    width: 38%;
+    margin: 5px;
+    text-align: right;
+}
+
+.formulario input
+{
+    width: 100%;
+    margin: 5px 0 15px 0;
+    padding: 8px;
+    box-sizing: border-box;
+    
+}
+.formulario textarea
+{
+    width: 100%;
+    margin: 5px 0 15px 0;
+    padding: 8px;
+    box-sizing: border-box;
+    
+}
+.formulario input[type="checkbox"]
+{
+    width:auto;
+   display: inline-block;
+   margin-right: 10px;
+   vertical-align: middle;
+
+}
+.formulario a
+{
+color: green;
+font-weight: bold;
+}
+.formulario a:hover
+{
+color:  rgb(82, 184, 82);
+font-weight: bold;
+}
+.infocontact
+{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.infocontact a
+{
+color: green;
+font-weight: bold;
+}
+.infocontact a:hover
+{
+color:  rgb(82, 184, 82);
+font-weight: bold;
+}
+.Tablaservicios a
+{
+color: green;
+font-weight: bold;
+}
+.Tablaservicios a:hover
+{
+color:  rgb(82, 184, 82);
+font-weight: bold;
+}
+.Tablaservicios h2
+{
+    font-size: 1.7em;
+    color: green;
+    margin-bottom:30px;
+}
+.Tablaservicios /* */
+{width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 1.2em;
+  text-align: center;
+}
+  .Tablaservicios caption
+  {margin-bottom: 15px;
+color:green}
+
+.Tablaservicios td
+{
+padding:10px;
+}
+
+.Tablaservicios th {
+  padding: 25px;
+  color: rgb(0, 45, 0);
+  font-weight: bold;
+}
+.Tablaservicios tr:nth-child(odd) {
+  background-color: #ffffff;  
+}
+.Tablaservicios tr:nth-child(even) {
+  background-color: #f5f5f5; 
+}
+.Tablaservicios tr:first-child
+{
+  background-color: #bde5b8;
+}
+.Tablaservicios td:first-child
+{
+    background-color: #f2bd0e42;
+    padding: 25px;
+  color: rgb(0, 45, 0);
+  font-weight: bold;
+}
+caption
+{
+  caption-side: bottom;/* para poner el captio abajo: no cuento donde lo pongo, es el css quee va a permitirlo*/
+  padding-top: 30px;
+}
+button
+ {
+    display:block;
+    text-align:center;
+    padding:10px 20px;
+    margin: 30px auto;
+     background-color: green;
+  color: white;
+    
+ }
+ button:hover
+ {
+  background-color: rgb(82, 184, 82);
+  font-weight:bold;
+  color: white;
+ }
 footer
 {
     clear:both;
@@ -242,4 +428,155 @@ footer img:hover
 .icono-fijo img:hover
 {
     transform:scale(1.3);   
+}
+
+@media (min-width: 700px) and (max-width: 1199px)
+{
+    header h1
+{
+   
+    font-size: 6vh;
+    padding-right: 2vh;
+}
+header h2
+    {
+        font-size: 3vh;
+   }
+    nav a
+    {
+        font-size: 2.5vh;
+        
+    }
+    section
+    {
+        float: left;
+        width: 45%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;
+        margin-top: 0px;
+    }
+    article .media700
+    {
+        display:block;
+    }
+    article.proyecto
+    {display:none;}
+    
+    aside
+    {
+        float:left;
+        width: 45%;
+        margin: 0px;
+        
+    }
+    aside h2
+    {
+        font-size: 4vh;
+    }
+     aside img {
+        width: 5vw;     /* largeur responsive */
+        height: auto;    /* conserve les proportions */
+        max-width: 80px; /* limite maximale pour ne pas devenir trop grand */
+        border-radius: 20%;
+    }
+}
+
+@media (max-width: 699px)
+{
+    body
+    {
+        
+        text-align: center;
+        width: 100%;
+        min-height: 100vh;
+    }
+header
+    {
+        display: none
+    }
+nav a
+    {
+        font-size: 2vh;
+        margin-left: 1vh;
+
+    }
+nav .logo
+    {
+    display:block;
+    position: absolute;
+    top:5px;
+    max-width: 40px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+    }
+nav .logo:hover{transform:scale(1.5);}
+
+/*nav
+{
+    max-height: 10vh;
+    padding-top: 10px;
+    
+}
+nav a
+{max-height: 4vh;box-sizing: border-box;}*/
+main
+    {
+    margin-top: 60px;
+    padding:20px;
+    overflow: visible;
+    }
+
+section
+    {
+        float:none;
+        width: 100%;
+        margin:0 auto;
+        padding: 0;
+    }
+
+article 
+    {
+        width: 90%;
+        margin: 15px auto; 
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    article .media700
+    {
+        display:none;
+    }
+
+aside
+    {float:none;
+    width:90%;
+    display: block;
+    box-sizing: border-box;
+    margin: 15px auto;
+    padding: 0px;
+    text-align: center;}
+
+aside li 
+    {
+    display: flex;              /* aligne icône + texte */
+    align-items: center;
+    justify-content: center;    /* centre le contenu */
+    gap: 15px;
+    
+    /*background: rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px auto;
+    width: 90%;*/
+    }
+
+    aside img
+{
+    max-width: 40px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+}
 }

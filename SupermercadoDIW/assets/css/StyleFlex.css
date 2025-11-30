@@ -1,0 +1,56 @@
+.flexcontenedor {
+  background-color: #ffe555;
+  color: green;
+  padding: 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  width: 90%;
+  margin: 0 auto;
+}/*Haz uso de las propiedades flex-wrap, justify-content y align-items.*/
+.elementos
+{
+    width: 30vh;
+    border:2px dotted green;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 40px;
+    transition: all ease-in 0.3s;
+    
+}
+.elementos:hover
+{
+    transform:scale(1.1);
+    transform: rotate(-15deg);
+    font-weight: bold;
+    background-color: #f8e36e;
+}
+
+.flexcontenedor2 {
+  background-color: #ffc355;
+  color: green;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+margin: 30px auto 0 auto;
+}/*Haz uso de las propiedades flex-wrap, justify-content y align-items.*/
+.elementos2
+{
+    width: 350px;
+    border:2px solid green;
+    display: flex;
+    align-items:baseline;
+    justify-content:center;
+    height: 100px;
+    
+}
+.elementos2:hover
+{   
+    font-weight: bold;
+    background-color: #f8e36e;
+}

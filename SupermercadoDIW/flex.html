@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Supermercado DIW - Pone te en relación con ty tienda de proximidad con productos saludables">
+    <meta charset="UTF-8">
+    <meta name="description" content="Supermecardo DIW - Tienda de proximidad con productos saludables">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="keywords" content="contactos,supermecado, tienda cerca, alimentos, productos saludables, productos frescos">
+     <meta name="keywords" content="supermecado, tienda cercana, alimentos, productos saludables, productos frescos">
      <meta name="author" content="Laurent">
-        <link rel="stylesheet" href="assets\css\Styleindex.css">
-        <title>Supermercado DIW Contactos</title>
+   <link rel="stylesheet" href="assets/css/Styleindex.css">
+    <link rel="stylesheet" href="assets/css/PrintDWI.css" media="print"><!-- Actividad 4.2.1 Impresión (1 punto)-->
+    <link rel="stylesheet" href="assets/css/Styleflex.css">
+   <title>DIW-Flex</title>
     </head>
     <body>
-        <header>
-        <a href="index.html">
+<header>
+            <a href="index.html">
                 <img src="assets/images/logoDIW.png" alt="Logo Supermercado DIW" class="logo">
                 </a>
                 <h1>SUPERMERCADO DIW</h1><!--punto 3-1-->
                 <h2>Tu Tienda de proximidad con productos saludables</h2>
         </header>
             <nav>
+                <img src="assets/images/logoDIW.png" alt="Logo Supermercado DIW" class="logo">
                 <a href="index.html">INICIO</a>
                 <a href="servicios.html">SERVICIOS</a>
                 <a href="contacto.html">CONTACTOS</a><!--Actividad 4.1 -->
                 <a href="flex.html">Flex</a>
             </nav>
-        <form class="formulario">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" autofocus  required placeholder="Introduzca tu Nombre" maxlength="40">
-            <br>
-            
-            <label for="Email">Email</label>
-            <input type="email" id="email" name="email"  required placeholder="abc@email.com">
-            <br>
-            <label for="age">Edad</label>
-            <input type="number" id="age" name="age"  required placeholder="18" min="18" max="99">
-            <br>
-            <label for="tel">Teléfono</label>
-            <input type="tel" id="tel" name="tel" required placeholder="+34 600 000 000">
-            
-            <label for="consulta">Su consulta</label>
-            <textarea type="textarea" id="consulta" name="consulta"  rows="5" cols="30" placeholder="Escribe aqui su consulta o pregunta..." ></textarea>
-           <br>
-           <label>
-           <input type="checkbox" id="condiciones" name="condiciones">
-           Acepto la <a href=""> política de privacidad y cookies</a>
-           </label>
-           <br>
-           <button type="submit"> Enviar</button>
-           <div class="infocontact">
-            <h2>Datos de Contactos</h2>
-            <p>Teléfono: <a href="tel: +34 987 654 321">987 654 321</a></p>
-            <p>Email: <a href="mailto:supermercado-diw@gmail.com">supermercado-diw@gmail.com</a></p>
-
-        </div>
-        </form>
-        
-      <footer>
+        <main>
+            <div class="flexcontenedor">
+                <div class="elementos">Promoción Frutas</div>
+                <div class="elementos">Promoción Pescados</div>
+                <div class="elementos">Promoción Carne</div>
+                <div class="elementos">Boost Recyclage</div>
+                <div class="elementos">Productor del mes</div>
+            </div>
+            <div class="flexcontenedor2">
+                <div class="elementos2">BlackFriday</div>
+                <div class="elementos2">Financiación</div>
+                <div class="elementos2">Green World</div>
+               
+            </div>
+        </main>
+         <footer>
             <div>
                 @2020 SUPERMERCADO DIW   
-                <a href="politica.pdf">Politica de privacidad y cookies</a><!--punto 3-1-->
+                <a href="politica.pdf">Politica de privacidad y cookies</a><!--punto 4.7-->
+                
             </div>
-            <br>
+        
             <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3129.033399918255!2d-0.49137555546979095!3d38.348208987459095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDIwJzUzLjYiTiAwwrAyOScyMi44Ilc!5e0!3m2!1sfr!2ses!4v1761153048557!5m2!1sfr!2ses" width="150" height="112" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><!--al principio use <a href> pero no me pone la mapa, funciona con iframe-->
             </div>
@@ -76,5 +64,5 @@
         <div class="icono-fijo"><!--Creo tengo que hacerlo fuera de los nav, footer, main... no veo como hacerlo de otra forma-->
         <a href="https://www.whatsapp.com/" target="_blank"><img src="assets/images/logoWhatsapp.jpg" alt="Logo de WhatsApp"></a>
         </div>
-</body>
+    </body>
 </html>
